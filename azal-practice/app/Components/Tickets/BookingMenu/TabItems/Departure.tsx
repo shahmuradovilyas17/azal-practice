@@ -1,7 +1,5 @@
 import React from "react";
 
-function Departure() {
+export function Departure() {
   return <div>Departure</div>;
 }
-
-export default Departure;

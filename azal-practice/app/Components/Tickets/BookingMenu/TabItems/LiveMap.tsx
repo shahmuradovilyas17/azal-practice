@@ -1,7 +1,5 @@
 import React from "react";
 
-function LiveMap() {
+export function LiveMap() {
   return <div>LiveMap</div>;
 }
-
-export default LiveMap;

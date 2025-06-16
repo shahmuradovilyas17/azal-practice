@@ -1,7 +1,5 @@
 import React from "react";
 
-function Arrival() {
+export function Arrival() {
   return <div>Arrival</div>;
 }
-
-export default Arrival;

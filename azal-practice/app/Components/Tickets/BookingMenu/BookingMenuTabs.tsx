@@ -4,12 +4,12 @@
 import React from "react";
 import { BookingMenuTabsItem } from "./BookingMenuTabsItem";
 import { BuyTicket } from "./TabItems/BuyTicket";
-import LiveMap from "./TabItems/LiveMap";
-import Departure from "./TabItems/Departure";
-import Arrival from "./TabItems/Arrival";
-import Status from "./TabItems/Status";
-import Booking from "./TabItems/Booking";
-import Register from "./TabItems/Register";
+import { LiveMap } from "./TabItems/LiveMap";
+import { Departure } from "./TabItems/Departure";
+import { Arrival } from "./TabItems/Arrival";
+import { Status } from "./TabItems/Status";
+import { Booking } from "./TabItems/Booking";
+import { Register } from "./TabItems/Register";
 
 export function BookingMenuTabs() {
   const [activeTab, setActiveTab] = React.useState("buy");
