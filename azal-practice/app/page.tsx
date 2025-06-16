@@ -3,6 +3,7 @@ import { BookingMenuTabs } from "./Components/Tickets/BookingMenu/BookingMenuTab
 import { Header } from "./Components/Header";
 import "./globals.css";
 import { SpecialOffers } from "./Components/Tickets/Special Offers/SpecialOffers";
+import { PopularDestinations } from "./Components/Tickets/PopularDestinations/PopularDestinations";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <BookingMenuSelect />
         <BookingMenuTabs />
         <SpecialOffers />
+        <PopularDestinations />
       </div>
     </>
   );

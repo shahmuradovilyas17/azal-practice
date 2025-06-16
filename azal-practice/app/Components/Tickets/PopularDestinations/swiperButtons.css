@@ -1,0 +1,16 @@
+.swiper-button-prev {
+  left: 0px;
+  color: black;
+  opacity: 100 !important;
+}
+
+.swiper-button-next {
+  right: 0px;
+  color: black;
+  opacity: 100 !important;
+}
+
+.swiper-button-disabled {
+  color: gray;
+  opacity: 50 !important;
+}

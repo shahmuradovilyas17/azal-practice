@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import Image from "next/image";
 import React from "react";
 import MoscowImage from "../../../../public/Images/Moscow.webp";
