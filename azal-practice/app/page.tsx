@@ -1,15 +1,17 @@
-import { BookingMenuSelect } from "./Components/Tickets/BookingMenuSelect";
-import { BookingMenuTabs } from "./Components/Tickets/BookingMenuTabs";
+import { BookingMenuSelect } from "./Components/Tickets/BookingMenu/BookingMenuSelect";
+import { BookingMenuTabs } from "./Components/Tickets/BookingMenu/BookingMenuTabs";
 import { Header } from "./Components/Header";
 import "./globals.css";
+import { SpecialOffers } from "./Components/Tickets/Special Offers/SpecialOffers";
 
 export default function Home() {
   return (
     <>
-      <div className="pb-8">
+      <div className="">
         <Header />
         <BookingMenuSelect />
         <BookingMenuTabs />
+        <SpecialOffers />
       </div>
     </>
   );

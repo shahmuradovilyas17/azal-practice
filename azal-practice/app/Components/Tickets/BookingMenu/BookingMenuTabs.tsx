@@ -3,25 +3,25 @@
 "use client";
 import React from "react";
 import { BookingMenuTabsItem } from "./BookingMenuTabsItem";
-import { BuyTicket } from "./BookingMenu/TabItems/BuyTicket";
-import LiveMap from "./BookingMenu/TabItems/LiveMap";
-import Departure from "./BookingMenu/TabItems/Departure";
-import Arrival from "./BookingMenu/TabItems/Arrival";
-import Status from "./BookingMenu/TabItems/Status";
-import Booking from "./BookingMenu/TabItems/Booking";
-import Register from "./BookingMenu/TabItems/Register";
+import { BuyTicket } from "./TabItems/BuyTicket";
+import LiveMap from "./TabItems/LiveMap";
+import Departure from "./TabItems/Departure";
+import Arrival from "./TabItems/Arrival";
+import Status from "./TabItems/Status";
+import Booking from "./TabItems/Booking";
+import Register from "./TabItems/Register";
 
 export function BookingMenuTabs() {
   const [activeTab, setActiveTab] = React.useState("buy");
 
   const tabsArray = [
-    { text: "Купить", id: "buy" },
-    { text: "Регистрация", id: "register" },
-    { text: "Бронирования", id: "booking" },
-    { text: "Статус", id: "status" },
-    { text: "Arrival", id: "arrival" },
-    { text: "Departure", id: "departure" },
-    { text: "Карта", id: "map" },
+    { keyId: 1, text: "Купить", id: "buy" },
+    { keyId: 2, text: "Регистрация", id: "register" },
+    { keyId: 3, text: "Бронирования", id: "booking" },
+    { keyId: 4, text: "Статус", id: "status" },
+    { keyId: 5, text: "Arrival", id: "arrival" },
+    { keyId: 6, text: "Departure", id: "departure" },
+    { keyId: 7, text: "Карта", id: "map" },
   ];
   console.log(activeTab);
 
@@ -34,6 +34,7 @@ export function BookingMenuTabs() {
               id={tab.id}
               text={tab.text}
               setActiveTab={setActiveTab}
+              key={tab.keyId}
             />
           ))}
         </div>
