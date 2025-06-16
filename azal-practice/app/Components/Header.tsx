@@ -2,7 +2,7 @@ import React from "react";
 
 export function Header() {
   return (
-    <header className="p-8 text-black  bg-gray-200">
+    <header className="p-8 text-black  bg-gray-200 border-b-2">
       <div className="flex justify-between max-w-290 m-auto">
         <a href="" className="font-[Manrope-Bold] text-4xl">
           NovaTrip
