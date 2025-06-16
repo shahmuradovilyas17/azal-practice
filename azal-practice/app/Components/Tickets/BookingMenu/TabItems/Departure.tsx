@@ -1,5 +1,20 @@
-import React from "react";
+"use client";
+import { DataTable } from "@/components/ui/data-table";
+import React, { useEffect, useState } from "react";
+import { depColumns } from "@/app/columns";
+import { getDepartures } from "@/app/services";
+import type { Departure } from "@/app/types";
 
 export function Departure() {
-  return <div>Departure</div>;
+  const [data, setData] = useState<Departure[]>([]);
+
+  useEffect(() => {
+    getDepartures().then(setData);
+  }, []);
+
+  return (
+    <main className="flex  flex-col items-center justify-between p-[24px]">
+      <DataTable columns={depColumns} data={data} />
+    </main>
+  );
 }

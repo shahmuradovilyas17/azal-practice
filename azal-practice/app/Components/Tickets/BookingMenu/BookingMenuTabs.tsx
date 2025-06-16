@@ -21,7 +21,6 @@ export function BookingMenuTabs() {
     { keyId: 4, text: "Статус", id: "status" },
     { keyId: 5, text: "Arrival", id: "arrival" },
     { keyId: 6, text: "Departure", id: "departure" },
-    { keyId: 7, text: "Карта", id: "map" },
   ];
   console.log(activeTab);
 
@@ -53,8 +52,6 @@ export function BookingMenuTabs() {
                 return <Arrival />;
               case "departure":
                 return <Departure />;
-              case "map":
-                return <LiveMap />;
               default:
                 return null;
             }
