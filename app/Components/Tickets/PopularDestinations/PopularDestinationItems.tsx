@@ -6,16 +6,17 @@ import "swiper/css/navigation";
 import "./swiperButtons.css";
 import Image from "next/image";
 
-import china from "../../../../public/images/china.avif";
-import georgia from "../../../../public/images/georgia.avif";
-import germany from "../../../../public/images/germany.avif";
-import hungary from "../../../../public/images/hungary.avif";
-import italy from "../../../../public/images/italy.avif";
-import kazakhstan from "../../../../public/images/kazakhstan.avif";
-import moldova from "../../../../public/images/moldova.avif";
-import montenegro from "../../../../public/images/montenegro.avif";
-import uae from "../../../../public/images/uae.avif";
-import uzbekistan from "../../../../public/images/uzbekistan.avif";
+// import china from "../../../../public/images/china.avif";
+// import georgia from "../../../../public/images/georgia.avif";
+// import germany from "../../../../public/images/germany.avif";
+// import hungary from "../../../../public/images/hungary.avif";
+// import italy from "../../../../public/images/italy.avif";
+// import kazakhstan from "../../../../public/images/kazakhstan.avif";
+// import moldova from "../../../../public/images/moldova.avif";
+// import montenegro from "../../../../public/images/montenegro.avif";
+// import uae from "../../../../public/images/uae.avif";
+// import uzbekistan from "../../../../public/images/uzbekistan.avif";
+import country from "../../../../public/images/country.jpeg"; // Placeholder image
 import { Navigation } from "swiper/modules";
 
 export function PopularDestinationItems() {
@@ -25,70 +26,70 @@ export function PopularDestinationItems() {
       from: "Baku",
       to: "UAE",
       price: "82 AZN",
-      img: uae,
+      // img: uae,
     },
     {
       id: 2,
       from: "Baku",
       to: "Georgia",
       price: "129 AZN",
-      img: georgia,
+      // img: georgia,
     },
     {
       id: 3,
       from: "Baku",
       to: "Italy",
       price: "107 AZN",
-      img: italy,
+      //  img: italy,
     },
     {
       id: 4,
       from: "Baku",
       to: "Germany",
       price: "163 AZN",
-      img: germany,
+      // img: germany,
     },
     {
       id: 5,
       from: "Baku",
       to: "Kazakhstan",
       price: "89 AZN",
-      img: kazakhstan,
+      // img: kazakhstan,
     },
     {
       id: 6,
       from: "Baku",
       to: "Hungary",
       price: "129 AZN",
-      img: hungary,
+      // img: hungary,
     },
     {
       id: 7,
       from: "Baku",
       to: "Montenegro",
       price: "289 AZN",
-      img: montenegro,
+      // img: montenegro,
     },
     {
       id: 8,
       from: "Baku",
       to: "China",
       price: "331 AZN",
-      img: china,
+      // img: china,
     },
     {
       id: 9,
       from: "Baku",
       to: "Uzbekistan",
       price: "191 AZN",
-      img: uzbekistan,
+      // img: uzbekistan,
     },
     {
       id: 10,
       from: "Baku",
       to: "Moldova",
       price: "188 AZN",
-      img: moldova,
+      // img: moldova,
     },
   ];
   return (
@@ -104,7 +105,7 @@ export function PopularDestinationItems() {
         <SwiperSlide key={destination.id} style={{ margin: "0" }}>
           <div>
             <Image
-              src={destination.img}
+              src={country}
               alt={destination.to}
               width={300}
               height={200}
