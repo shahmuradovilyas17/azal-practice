@@ -16,7 +16,7 @@ import Image from "next/image";
 // import montenegro from "../../../../public/images/montenegro.avif";
 // import uae from "../../../../public/images/uae.avif";
 // import uzbekistan from "../../../../public/images/uzbekistan.avif";
-import country from "../../../../public/images/country.jpeg"; // Placeholder image
+// import country from "../../../../public/images/country.jpeg"; // Placeholder image
 import { Navigation } from "swiper/modules";
 
 export function PopularDestinationItems() {
@@ -104,13 +104,13 @@ export function PopularDestinationItems() {
       {destinations.map((destination) => (
         <SwiperSlide key={destination.id} style={{ margin: "0" }}>
           <div>
-            <Image
-              src={country}
+            {/* <Image
+              src={}
               alt={destination.to}
               width={300}
               height={200}
               className="rounded-[14px] mb-5"
-            />
+            /> */}
             <h3 className="text-[17px] font-[Manrope-Bold]">
               {destination.to}
             </h3>
