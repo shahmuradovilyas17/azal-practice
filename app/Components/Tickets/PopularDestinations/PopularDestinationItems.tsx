@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "./swiperButtons.css";
-import Image from "next/image";
+// import Image from "next/image";
 
 // import china from "../../../../public/images/china.avif";
 // import georgia from "../../../../public/images/georgia.avif";
