@@ -1,6 +1,6 @@
 import React from "react";
 
-export function BookingMenuTabsItem({
+export function TicketsMenuTabsItem({
   text,
   id,
   setActiveTab,

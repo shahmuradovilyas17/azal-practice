@@ -1,5 +1,5 @@
-import { Departure } from "../types.js";
-import { Arrival } from "../types.js";
+import { Departure } from "../[lang]/types.js";
+import { Arrival } from "../[lang]/types.js";
 
 const getDepartures = async (): Promise<Departure[]> => {
   const data = await fetch(
