@@ -9,11 +9,13 @@ export function BookingMenuSelect({
   activeSelect: string;
 }) {
   return (
-    <div className="bg-gray-200 p-8 text-center">
+    <div className=" p-8 text-center">
       <div className="inline-flex border-1 border-black rounded-[15px]">
         <div
-          className={`rounded-[inherit] cursor-pointer w-[150px] flex items-center justify-center p-2 ${
-            activeSelect === "tickets" ? "bg-blue-500 text-white" : ""
+          className={`rounded-[inherit]  w-[150px] flex items-center justify-center p-2  ${
+            activeSelect === "tickets"
+              ? "bg-blue-500 text-white"
+              : "hover:bg-gray-300 transition-colors duration-200 cursor-pointer"
           }`}
           onClick={() => setActiveSelect("tickets")}
         >
@@ -28,8 +30,10 @@ export function BookingMenuSelect({
           <div className="font-[Manrope-Bold] text-[14px]">Авиабилеты</div>
         </div>
         <div
-          className={`rounded-[inherit] cursor-pointer w-[150px] flex items-center justify-center p-2 ${
-            activeSelect === "hotels" ? "bg-blue-500 text-white" : ""
+          className={`rounded-[inherit] w-[150px] flex items-center justify-center p-2 ${
+            activeSelect === "hotels"
+              ? "bg-blue-500 text-white"
+              : "hover:bg-gray-300 transition-colors duration-200 cursor-pointer"
           }`}
           onClick={() => setActiveSelect("hotels")}
         >

@@ -3,7 +3,7 @@ import React from "react";
 export function Booking() {
   return (
     <div className="p-5">
-      <div className="flex mb-5">
+      <div className="flex mb-5 bg-white rounded-[8px]">
         <div className="rounded-l-[8px] border-[1px] border-r-0 p-1 w-[250px] h-[75px]  py-[15px] overflow-ellipsis">
           <input
             type="text"
@@ -20,7 +20,7 @@ export function Booking() {
         </div>
       </div>
       <div className="flex justify-between">
-        <button className="rounded-[8px] border-[1px] border-black p-5 bg-[#97ba1e] text-white font-[Manrope-Bold] text-[16px]">
+        <button className="rounded-[8px] border-[1px] border-black py-5 px-20 bg-[#97ba1e] text-white font-[Manrope-Bold] text-[16px]">
           Найти
         </button>
       </div>

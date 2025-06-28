@@ -3,7 +3,7 @@ import React from "react";
 export function Register() {
   return (
     <div className="p-5">
-      <div className="flex mb-5">
+      <div className="flex mb-5 bg-white rounded-[8px]">
         <div className="rounded-l-[8px] border-[1px] border-r-0 p-1 w-[250px] h-[75px]  py-[15px] overflow-ellipsis">
           <input
             type="text"

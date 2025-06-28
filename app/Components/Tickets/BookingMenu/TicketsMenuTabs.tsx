@@ -24,8 +24,8 @@ export function TicketsMenuTabs() {
   console.log(activeTab);
 
   return (
-    <div className=" bg-gray-200">
-      <div className="max-w-290 m-auto">
+    <div className="">
+      <div className="max-w-290 m-auto bg-blue-100 rounded-[15px] p-5 ">
         <div className="font-[Manrope-Bold] text-5xl text-center">
           Самые выгодные цены на билеты
         </div>
@@ -37,6 +37,7 @@ export function TicketsMenuTabs() {
                 text={tab.text}
                 setActiveTab={setActiveTab}
                 key={tab.keyId}
+                activeTab={activeTab}
               />
             ))}
           </div>
