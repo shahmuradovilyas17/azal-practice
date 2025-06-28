@@ -15,7 +15,10 @@ export default function Home() {
     <>
       <div className="">
         <Header />
-        <BookingMenuSelect setActiveSelect={setActiveSelect} />
+        <BookingMenuSelect
+          setActiveSelect={setActiveSelect}
+          activeSelect={activeSelect}
+        />
         {(() => {
           switch (activeSelect) {
             case "tickets":

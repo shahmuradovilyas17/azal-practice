@@ -48,14 +48,6 @@ export function Header() {
               <span>Личный Кабинет</span>
             </button>
           </div>
-          <div
-            id="hamburger-menu"
-            className="flex flex-col items-center justify-around py-2.5 w-12 h-12 "
-          >
-            <div className="w-6 h-0.5 bg-black"></div>
-            <div className="w-6 h-0.5 bg-black"></div>
-            <div className="w-6 h-0.5 bg-black"></div>
-          </div>
         </div>
       </div>
     </header>
