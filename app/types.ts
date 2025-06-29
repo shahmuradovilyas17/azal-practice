@@ -1,17 +1,11 @@
-export interface Departure {
+export interface FlightData {
   id: number;
-  time: string;
-  destination: string;
-  flightNumber: string;
-  gate: string;
-  remarks: string;
-}
-
-export interface Arrival {
-  id: number;
+  date: string;
   time: string;
   from: string;
+  to: string;
   flightNumber: string;
   gate: string;
   remarks: string;
+  type: string;
 }

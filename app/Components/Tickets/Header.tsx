@@ -1,12 +1,13 @@
+import Link from "next/link";
 import React from "react";
 
 export function Header() {
   return (
     <header className="p-8 text-black border-b-2">
       <div className="flex justify-between max-w-290 m-auto">
-        <a href="" className="font-[Manrope-Bold] text-4xl ">
-          NovaTrip
-        </a>
+        <Link href="/">
+          <div className="font-[Manrope-Bold] text-4xl ">NovaTrip</div>
+        </Link>
         <div className="flex gap-4">
           <div>
             <button

@@ -1,3 +1,5 @@
+import { Footer } from "./Components/Tickets/Footer";
+import { Header } from "./Components/Tickets/Header";
 import "./globals.css";
 
 export default function RootLayout({
@@ -7,7 +9,15 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body>{children}</body>
+      <body>
+        <>
+          <Header />
+        </>
+        <>{children}</>
+        <>
+          <Footer />
+        </>
+      </body>
     </html>
   );
 }

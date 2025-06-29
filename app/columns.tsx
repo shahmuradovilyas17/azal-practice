@@ -1,16 +1,20 @@
 "use client";
 
 import { ColumnDef } from "@tanstack/react-table";
-import { Arrival, Departure } from "./types";
+import { FlightData } from "./types";
 
-export const depColumns: ColumnDef<Departure>[] = [
+export const depColumns: ColumnDef<FlightData>[] = [
+  {
+    accessorKey: "date",
+    header: "Date",
+  },
   {
     accessorKey: "time",
     header: "Time",
   },
 
   {
-    accessorKey: "destination",
+    accessorKey: "to",
     header: "Destination",
   },
   {
@@ -27,7 +31,11 @@ export const depColumns: ColumnDef<Departure>[] = [
   },
 ];
 
-export const arrColumns: ColumnDef<Arrival>[] = [
+export const arrColumns: ColumnDef<FlightData>[] = [
+  {
+    accessorKey: "date",
+    header: "Date",
+  },
   {
     accessorKey: "time",
     header: "Time",

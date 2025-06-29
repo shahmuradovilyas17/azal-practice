@@ -3,10 +3,10 @@ import { DataTable } from "@/components/ui/data-table";
 import React, { useEffect, useState } from "react";
 import { arrColumns } from "@/app/columns";
 import { getArrivals } from "@/app/services";
-import type { Arrival } from "@/app/types";
+import type { FlightData } from "@/app/types";
 
 export function Arrival() {
-  const [data, setData] = useState<Arrival[]>([]);
+  const [data, setData] = useState<FlightData[]>([]);
 
   useEffect(() => {
     getArrivals().then(setData);

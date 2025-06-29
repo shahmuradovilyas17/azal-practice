@@ -1,6 +1,8 @@
 import React from "react";
+import { useRouter } from "next/navigation";
 
 export function Booking() {
+  const router = useRouter();
   return (
     <div className="p-5">
       <div className="flex mb-5 bg-white rounded-[8px]">
@@ -20,7 +22,10 @@ export function Booking() {
         </div>
       </div>
       <div className="flex justify-between">
-        <button className="rounded-[8px] border-[1px] border-black py-5 px-20 bg-[#97ba1e] text-white font-[Manrope-Bold] text-[16px]">
+        <button
+          className="rounded-[8px] border-[1px] border-black py-5 px-20 bg-[#97ba1e] text-white font-[Manrope-Bold] text-[16px]"
+          onClick={() => router.push("/booking")}
+        >
           Найти
         </button>
       </div>

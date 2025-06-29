@@ -1,6 +1,8 @@
 import React from "react";
+import { useRouter } from "next/navigation";
 
 export function Status() {
+  const router = useRouter();
   return (
     <div className="p-5">
       <div className="flex mb-5 ">
@@ -26,7 +28,10 @@ export function Status() {
           />
         </div>
       </div>
-      <button className="rounded-[8px] border-[1px] border-black p-5 bg-[#97ba1e] text-white font-[Manrope-Bold] text-[16px]">
+      <button
+        className="rounded-[8px] border-[1px] border-black p-5 bg-[#97ba1e] text-white font-[Manrope-Bold] text-[16px]"
+        onClick={() => router.push("/status")}
+      >
         Проверить статус
       </button>
     </div>

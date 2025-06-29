@@ -1,11 +1,9 @@
 "use client";
 import { BookingMenuSelect } from "./Components/Tickets/BookingMenuSelect";
 import { TicketsMenuTabs } from "./Components/Tickets/BookingMenu/TicketsMenuTabs";
-import { Header } from "./Components/Tickets/Header";
 import "./globals.css";
 import { SpecialOffers } from "./Components/Tickets/Special Offers/SpecialOffers";
 import { PopularDestinations } from "./Components/Tickets/PopularDestinations/PopularDestinations";
-import { Footer } from "./Components/Tickets/Footer";
 import { HotelsMenuTab } from "./Components/Hotels/HotelsMenuTab";
 import React from "react";
 
@@ -14,7 +12,6 @@ export default function Home() {
   return (
     <>
       <div className="">
-        <Header />
         <BookingMenuSelect
           setActiveSelect={setActiveSelect}
           activeSelect={activeSelect}
@@ -31,7 +28,6 @@ export default function Home() {
         })()}
         <SpecialOffers />
         <PopularDestinations />
-        <Footer />
       </div>
     </>
   );
