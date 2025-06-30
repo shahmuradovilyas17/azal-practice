@@ -1,5 +1,5 @@
-import { Footer } from "./Components/Tickets/Footer";
-import { Header } from "./Components/Tickets/Header";
+import { Footer } from "./Components/Footer";
+import { Header } from "./Components/Header";
 import "./globals.css";
 
 export default function RootLayout({

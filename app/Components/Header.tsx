@@ -3,7 +3,7 @@ import React from "react";
 
 export function Header() {
   return (
-    <header className="p-8 text-black border-b-2">
+    <header className="p-8 text-black border-b-2 bg-blue-100">
       <div className="flex justify-between max-w-290 m-auto">
         <Link href="/">
           <div className="font-[Manrope-Bold] text-4xl ">NovaTrip</div>
