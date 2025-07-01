@@ -1,5 +1,6 @@
 import { Footer } from "./Components/Footer";
 import { Header } from "./Components/Header";
+import { StateProvider } from "./Components/context";
 import "./globals.css";
 
 export default function RootLayout({
@@ -10,13 +11,15 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <>
-          <Header />
-        </>
-        <>{children}</>
-        <>
-          <Footer />
-        </>
+        <StateProvider>
+          <>
+            <Header />
+          </>
+          <>{children}</>
+          <>
+            <Footer />
+          </>
+        </StateProvider>
       </body>
     </html>
   );
