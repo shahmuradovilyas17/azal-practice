@@ -1,4 +1,4 @@
-import { FlightData } from "../types.js";
+import { FlightData, TicketDB } from "../types.js";
 
 const getDepartures = async (): Promise<FlightData[]> => {
   const url = new URL(
@@ -30,4 +30,13 @@ const getFlightData = async (): Promise<FlightData[]> => {
   return data.json();
 };
 
-export { getDepartures, getArrivals, getFlightData };
+const getTicketData = async (): Promise<TicketDB[]> => {
+  const url = new URL(
+    "https://66ce31f6199b1d6286880fb0.mockapi.io/flight/TicketDB"
+  );
+  const data = await fetch(url);
+
+  return data.json();
+};
+
+export { getDepartures, getArrivals, getFlightData, getTicketData };

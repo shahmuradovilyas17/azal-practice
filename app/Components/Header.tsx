@@ -11,7 +11,7 @@ export function Header() {
         <div className="flex gap-4">
           <div className="bg-white rounded-[12px]">
             <button
-              className="flex items-center gap-2 p-3"
+              className="flex items-center gap-2 p-3 border-1 border-black rounded-[12px] justify-center text-[14px]"
               id="currency-button"
             >
               <span>Валюта</span>
@@ -29,7 +29,7 @@ export function Header() {
           </div>
           <div className="bg-white rounded-[12px]">
             <button
-              className="flex items-center gap-2 p-3"
+              className="flex items-center gap-2 p-3 border-1 border-black rounded-[12px] justify-center text-[14px]"
               id="language-button"
             >
               <svg className="w-5 h-5" viewBox="0 0 20 20">
@@ -42,7 +42,10 @@ export function Header() {
             </button>
           </div>
           <div className="bg-white rounded-[12px]">
-            <button className="flex items-center gap-2 p-3" id="account-button">
+            <button
+              className="flex items-center gap-2 p-3 border-1 border-black rounded-[12px] justify-center text-[14px]"
+              id="account-button"
+            >
               <svg viewBox="4 2 16 20" className="w-5 h-5" fill="currentColor">
                 <path d="M12 2C9.247 2 7 4.247 7 7s2.247 5 5 5c2.752 0 5-2.247 5-5s-2.248-5-5-5zm0 1.5c1.942 0 3.5 1.558 3.5 3.5s-1.558 3.5-3.5 3.5A3.489 3.489 0 0 1 8.5 7c0-1.942 1.558-3.5 3.5-3.5zM6.25 14A2.261 2.261 0 0 0 4 16.25v.6c0 1.47.932 2.789 2.354 3.696C7.777 21.453 9.722 22 12 22s4.223-.547 5.645-1.454C19.069 19.639 20 18.32 20 16.85v-.6A2.261 2.261 0 0 0 17.75 14H6.25zm0 1.5h11.5c.423 0 .75.327.75.75v.6c0 .832-.536 1.714-1.661 2.431C15.714 20 14.034 20.5 12 20.5c-2.034 0-3.714-.501-4.839-1.219C6.036 18.564 5.5 17.682 5.5 16.85v-.6c0-.423.327-.75.75-.75z"></path>
               </svg>

@@ -20,43 +20,23 @@
 
 #currency-button {
   background-color: hsla(0, 0%, 100%, 0.1);
-  border: 1px solid black;
-  border-radius: 12px;
-  justify-content: center;
-  font-size: 14px;
   line-height: 24px;
 }
 
 #language-button {
   background-color: hsla(0, 0%, 100%, 0.1);
-  border: 1px solid black;
-  border-radius: 12px;
-  justify-content: center;
-  font-size: 14px;
   line-height: 24px;
 }
 
 #account-button {
   background-color: hsla(0, 0%, 100%, 0.1);
-  border: 1px solid black;
-  border-radius: 12px;
-  justify-content: center;
-  font-size: 14px;
   line-height: 24px;
 }
 
-#hamburger-menu {
+/* #hamburger-menu {
   background-color: hsla(0, 0%, 100%, 0.1);
   border: 1px solid black;
   border-radius: 12px;
   font-size: 14px;
   line-height: 24px;
-}
-
-#top-section-container {
-  margin: 0 auto;
-}
-
-#top-section-container-root-tabs {
-  scrollbar-width: none;
-}
+} */

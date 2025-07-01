@@ -9,3 +9,14 @@ export interface FlightData {
   remarks: string;
   type: string;
 }
+
+export interface TicketDB {
+  id: number;
+  flightID: number;
+  name: string;
+  surname: string;
+  birthday: string;
+  ticketNumber: string;
+  type: string;
+  registered: boolean;
+}

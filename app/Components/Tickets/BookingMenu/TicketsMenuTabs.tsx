@@ -1,9 +1,7 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 import React from "react";
 import { TicketsMenuTabsItem } from "./TicketsMenuTabsItem";
 import { BuyTicket } from "./TabItems/BuyTicket";
-import { LiveMap } from "./TabItems/LiveMap";
 import { Departure } from "./TabItems/Departure";
 import { Arrival } from "./TabItems/Arrival";
 import { Status } from "./TabItems/Status";
