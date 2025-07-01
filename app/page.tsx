@@ -6,6 +6,8 @@ import { SpecialOffers } from "./Components/Tickets/Special Offers/SpecialOffers
 import { PopularDestinations } from "./Components/Tickets/PopularDestinations/PopularDestinations";
 import { HotelsMenuTab } from "./Components/Hotels/HotelsMenuTab";
 import React from "react";
+import { SpecialOffersHotels } from "./Components/Hotels/SpecialOffersHotels/SpecialOffersHotels";
+import { PopularPlaces } from "./Components/Hotels/PopularPlaces/PopularPlaces";
 
 export default function Home() {
   const [activeSelect, setActiveSelect] = React.useState("tickets");
@@ -19,15 +21,25 @@ export default function Home() {
         {(() => {
           switch (activeSelect) {
             case "tickets":
-              return <TicketsMenuTabs />;
+              return (
+                <>
+                  <TicketsMenuTabs />
+                  <SpecialOffers />
+                  <PopularDestinations />
+                </>
+              );
             case "hotels":
-              return <HotelsMenuTab />;
+              return (
+                <>
+                  <HotelsMenuTab />
+                  <SpecialOffersHotels />
+                  <PopularPlaces />
+                </>
+              );
             default:
               return null;
           }
         })()}
-        <SpecialOffers />
-        <PopularDestinations />
       </div>
     </>
   );

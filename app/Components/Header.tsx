@@ -9,9 +9,9 @@ export function Header() {
           <div className="font-[Manrope-Bold] text-4xl ">NovaTrip</div>
         </Link>
         <div className="flex gap-4">
-          <div className="bg-white rounded-[12px]">
+          <div className="bg-white rounded-[12px] hover:bg-gray-300">
             <button
-              className="flex items-center gap-2 p-3 border-1 border-black rounded-[12px] justify-center text-[14px]"
+              className="flex items-center gap-2 p-3 border-1 border-black rounded-[12px] justify-center text-[14px] hover:cursor-pointer"
               id="currency-button"
             >
               <span>Валюта</span>
@@ -27,9 +27,9 @@ export function Header() {
               </svg>
             </button>
           </div>
-          <div className="bg-white rounded-[12px]">
+          <div className="bg-white rounded-[12px] hover:bg-gray-300">
             <button
-              className="flex items-center gap-2 p-3 border-1 border-black rounded-[12px] justify-center text-[14px]"
+              className="flex items-center gap-2 p-3 border-1 border-black rounded-[12px] justify-center text-[14px] hover:cursor-pointer"
               id="language-button"
             >
               <svg className="w-5 h-5" viewBox="0 0 20 20">
@@ -41,9 +41,9 @@ export function Header() {
               <span>Русский</span>
             </button>
           </div>
-          <div className="bg-white rounded-[12px]">
+          <div className="bg-white rounded-[12px] hover:bg-gray-300">
             <button
-              className="flex items-center gap-2 p-3 border-1 border-black rounded-[12px] justify-center text-[14px]"
+              className="flex items-center gap-2 p-3 border-1 border-black rounded-[12px] justify-center text-[14px] hover:cursor-pointer"
               id="account-button"
             >
               <svg viewBox="4 2 16 20" className="w-5 h-5" fill="currentColor">

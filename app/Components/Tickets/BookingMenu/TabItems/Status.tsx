@@ -47,7 +47,7 @@ export function Status() {
         </div>
       </div>
       <button
-        className="rounded-[8px] border-[1px] border-black p-5 bg-[#97ba1e] text-white font-[Manrope-Bold] text-[16px]"
+        className="rounded-[8px] border-[1px] border-black p-5 bg-[#97ba1e] text-white font-[Manrope-Bold] text-[16px] hover:cursor-pointer"
         onClick={handleClick}
       >
         Проверить статус

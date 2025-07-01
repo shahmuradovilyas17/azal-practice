@@ -44,7 +44,7 @@ export function BuyTicket() {
           />
         </div>
         <button
-          className="rounded-[8px] border-[1px] border-black py-5 px-20 bg-[#97ba1e] text-white font-[Manrope-Bold] text-[16px]"
+          className="rounded-[8px] border-[1px] border-black py-5 px-20 bg-[#97ba1e] text-white font-[Manrope-Bold] text-[16px] hover:cursor-pointer"
           onClick={() => router.push("/buy")}
         >
           Поиск

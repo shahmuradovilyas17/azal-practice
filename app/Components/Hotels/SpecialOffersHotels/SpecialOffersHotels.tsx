@@ -1,7 +1,7 @@
 import React from "react";
-import { SpecialOffersItem } from "./SpecialOffersItem";
+import { SpecialOffersHotelsItem } from "./SpecialOffersHotelsItem";
 
-export function SpecialOffers() {
+export function SpecialOffersHotels() {
   return (
     <div className="">
       <div className="max-w-290 p-10 m-auto">
@@ -9,7 +9,7 @@ export function SpecialOffers() {
           Специальные предложения
         </div>
         <div className="gap-3.75 flex flex-wrap justify-center">
-          <SpecialOffersItem />
+          <SpecialOffersHotelsItem />
         </div>
       </div>
     </div>

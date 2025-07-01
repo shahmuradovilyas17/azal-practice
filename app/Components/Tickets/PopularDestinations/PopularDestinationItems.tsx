@@ -102,7 +102,7 @@ export function PopularDestinationItems() {
     >
       {destinations.map((destination) => (
         <SwiperSlide key={destination.id} style={{ margin: "0" }}>
-          <div>
+          <div className="rounded-[14px] p-2 hover:bg-blue-100 cursor-pointer">
             {
               <Image
                 src={destination.img}

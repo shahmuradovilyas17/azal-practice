@@ -51,7 +51,10 @@ export function SpecialOffersItem() {
   return (
     <>
       {specialOffers.map((offer) => (
-        <div key={offer.id} className="flex gap-4 w-[350px]">
+        <div
+          key={offer.id}
+          className="flex gap-4 w-[300px] rounded-[12px] cursor-pointer p-2 hover:bg-blue-100"
+        >
           <Image
             src={offer.img}
             alt=""
