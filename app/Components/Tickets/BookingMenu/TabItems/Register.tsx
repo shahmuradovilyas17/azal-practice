@@ -9,7 +9,7 @@ export function Register() {
 
   const handleClick = () => {
     router.push(
-      `/register?surname=${encodeURIComponent(
+      `/registerFlight?surname=${encodeURIComponent(
         surnameState
       )}&ticketNumber=${encodeURIComponent(ticketNumberState)}`
     );

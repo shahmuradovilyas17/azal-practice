@@ -2,15 +2,20 @@
 import { DataTable } from "@/components/ui/data-table";
 import React, { useEffect, useState } from "react";
 import { arrColumns } from "@/app/columns";
-import { getArrivals } from "@/app/services";
 import type { FlightData } from "@/app/types";
+import { useStateContext } from "@/app/Components/context";
 
 export function Arrival() {
   const [data, setData] = useState<FlightData[]>([]);
+  const { flightDB } = useStateContext();
 
   useEffect(() => {
-    getArrivals().then(setData);
-  }, []);
+    const filteredDB = Object.values(flightDB).filter((flight) => {
+      return flight.type === "Arrival";
+    });
+
+    setData(filteredDB);
+  }, [flightDB]);
 
   return (
     <main className="flex flex-col items-center justify-between p-[24px]">
