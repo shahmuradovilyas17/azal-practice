@@ -2,7 +2,7 @@
   padding: 50px 0;
   height: 100vh;
 
-  .register-page-inner {
+  #register-page-inner {
     max-width: 1340px;
     margin: 0 auto;
     color: black;
@@ -10,7 +10,8 @@
 
     .register-page-title {
       font-size: 28px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+      font-family: "Manrope-Bold";
     }
 
     form {
@@ -20,6 +21,7 @@
           font-size: 18px;
           display: inline-block;
           margin-right: 10px;
+          font-family: "Manrope-Regular";
         }
         .register-input {
           font-size: 18px;
@@ -28,14 +30,16 @@
           padding: 10px;
           border-radius: 10px;
           border: none;
+          background-color: white;
         }
       }
 
-      .register-input-button {
+      #register-input-button {
         padding: 10px;
-        border: none;
+        border: 1px solid black;
         border-radius: 10px;
         font-size: 18px;
+        font-family: "Manrope-Bold";
       }
     }
   }

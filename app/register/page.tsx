@@ -23,8 +23,8 @@ export default function RegisterPage() {
 
   return (
     <div className="register-page-wrapper">
-      <div className="register-page-inner">
-        <div className="register-page-title">Регистрация</div>
+      <div className="bg-blue-100 rounded-[15px] p-10" id="register-page-inner">
+        <div className="register-page-title">Qeydiyyat</div>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="register-section">
             <label htmlFor="login">Login</label>
@@ -50,12 +50,12 @@ export default function RegisterPage() {
             )}
           </div>
           <div className="register-section">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Ad</label>
             <input
               id="name"
               type="text"
-              placeholder="Name"
-              {...register("name", { required: "Name is required" })}
+              placeholder="Ad"
+              {...register("name", { required: "Ad tələb olunur" })}
               className={`register-input ${errors.name ? "input-error" : ""}`}
             />
             {errors.name && (
@@ -69,7 +69,7 @@ export default function RegisterPage() {
               type="email"
               placeholder="Email"
               {...register("email", {
-                required: "Email is required",
+                required: "Email tələb olunur",
                 pattern: {
                   value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                   message: "Invalid email address",
@@ -82,22 +82,22 @@ export default function RegisterPage() {
             )}
           </div>
           <div className="register-section">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">Şifrə</label>
             <input
               id="password"
               type="password"
-              placeholder="Password"
+              placeholder="Şifrə"
               {...register("password", {
-                required: "Password is required",
+                required: "Şifrə tələb olunur",
                 minLength: {
                   value: 8,
-                  message: "Password must be at least 8 characters long",
+                  message: "Şifrə ən azı 8 simvoldan ibarət olmalıdır",
                 },
                 pattern: {
                   value:
                     /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/,
                   message:
-                    "Password must include at least one letter, one digit, and one special character",
+                    "Şifrə ən azı 1 hərif bir rəqəm və bir xüsusi simvoldan ibarət olmalıdır",
                 },
               })}
               className={`register-input ${
@@ -108,8 +108,12 @@ export default function RegisterPage() {
               <p className="error-message">{errors.password.message}</p>
             )}
           </div>
-          <button type="submit" className="register-input-button">
-            Register
+          <button
+            type="submit"
+            className="bg-[#97ba1e] text-white "
+            id="register-input-button"
+          >
+            Qeydiyyatdan keç
           </button>
         </form>
       </div>

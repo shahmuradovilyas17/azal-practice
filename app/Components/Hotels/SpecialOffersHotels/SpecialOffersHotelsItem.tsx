@@ -11,8 +11,8 @@ export function SpecialOffersHotelsItem() {
       img: CosmosHotel,
       city: "Moscow",
       country: "Russia",
-      daily: "$50",
-      monthly: "$1000",
+      daily: "AZN 50",
+      monthly: "AZN 1000",
     },
     {
       id: 2,
@@ -20,8 +20,8 @@ export function SpecialOffersHotelsItem() {
       img: MarriottHotel,
       city: "Baku",
       country: "Azerbaijan",
-      daily: "$20",
-      monthly: "$500",
+      daily: "AZN 20",
+      monthly: "AZN 500",
     },
     {
       id: 3,
@@ -29,8 +29,8 @@ export function SpecialOffersHotelsItem() {
       img: CosmosHotel,
       city: "Moscow",
       country: "Russia",
-      daily: "$50",
-      monthly: "$1000",
+      daily: "AZN 50",
+      monthly: "AZN 1000",
     },
     {
       id: 4,
@@ -38,8 +38,8 @@ export function SpecialOffersHotelsItem() {
       img: MarriottHotel,
       city: "Baku",
       country: "Azerbaijan",
-      daily: "$20",
-      monthly: "$500",
+      daily: "AZN 20",
+      monthly: "AZN 500",
     },
   ];
 
@@ -62,10 +62,10 @@ export function SpecialOffersHotelsItem() {
               {offer.city}, {offer.country}
             </div>
             <div className="text-[#505f79] text-[16px] font-[Manrope-Regular] mb-2">
-              {offer.daily} - day
+              {offer.daily} - günü
             </div>
             <div className="text-[16px] text-[#97ba1e] font-[Manrope-Bold]">
-              {offer.monthly} - month
+              {offer.monthly} - ayı
             </div>
           </div>
         </div>

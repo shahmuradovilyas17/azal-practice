@@ -36,17 +36,17 @@ export default function LoginPage() {
 
   return (
     <div className="login-page-wrapper">
-      <div className="login-page-inner">
-        <div className="login-page-title">Вход в аккаунт</div>
+      <div className="bg-blue-100 rounded-[15px] p-10" id="login-page-inner">
+        <div className="login-page-title">Hesaba daxil ol</div>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="login-section">
-            <label htmlFor="loginOrEmail">Login or Email</label>
+            <label htmlFor="loginOrEmail">Login və ya Mail</label>
             <input
               id="loginOrEmail"
               type="text"
-              placeholder="Login or Email"
+              placeholder="Login və ya Mail"
               {...register("loginOrEmail", {
-                required: "Login or Email is required",
+                required: "Login və ya Mail tələb olunur",
               })}
               className={`login-input ${
                 errors.loginOrEmail ? "input-error" : ""
@@ -57,12 +57,12 @@ export default function LoginPage() {
             )}
           </div>
           <div className="login-section">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">Şifrə</label>
             <input
               id="password"
               type="password"
-              placeholder="Password"
-              {...register("password", { required: "Password is required" })}
+              placeholder="Şifrə"
+              {...register("password", { required: "Şifrə tələb olunur" })}
               className={`login-input ${errors.password ? "input-error" : ""}`}
             />
             {errors.password && (
@@ -70,12 +70,16 @@ export default function LoginPage() {
             )}
           </div>
           <button type="submit" className="login-input-button">
-            Login
+            Daxil ol
           </button>
         </form>
         <div>
-          <div className="text-black text-2xl">Нету аккаунта?</div>
-          <Link href="./register">Зарегистрироваться</Link>
+          <div className="text-black text-2xl mb-5">Hesabınız yoxdur?</div>
+          <Link href="./register" className="inline-block">
+            <div className="text-2xl border-1 border-black rounded-[15px] p-3 bg-[#97ba1e] text-white">
+              Hesab yaratmaq
+            </div>
+          </Link>
         </div>
       </div>
     </div>

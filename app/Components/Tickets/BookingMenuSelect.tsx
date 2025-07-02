@@ -27,7 +27,7 @@ export function BookingMenuSelect({
               ></path>
             </svg>
           </div>
-          <div className="font-[Manrope-Bold] text-[14px]">Авиабилеты</div>
+          <div className="font-[Manrope-Bold] text-[14px]">Aviabiletlər</div>
         </div>
         <div
           className={`rounded-[inherit] w-[150px] flex items-center justify-center p-2 ${
@@ -45,7 +45,7 @@ export function BookingMenuSelect({
               ></path>
             </svg>
           </div>
-          <div className="font-[Manrope-Bold] text-[14px]">Отели</div>
+          <div className="font-[Manrope-Bold] text-[14px]">Otellər</div>
         </div>
       </div>
     </div>

@@ -8,10 +8,10 @@ export function PopularDestinations() {
         <div className="bg-white rounded-[20px] pt-8 pb-8 relative">
           <div className="mb-[20px]">
             <div className="text-[34px] font-[Manrope-Bold] text-center">
-              Популярные направления
+              Popular Ünvanlar
             </div>
             <div className="text-[23px] font-[Manrope-Regular] text-center">
-              Из Баку
+              Bakıdan
             </div>
           </div>
           <PopularDestinationItems />

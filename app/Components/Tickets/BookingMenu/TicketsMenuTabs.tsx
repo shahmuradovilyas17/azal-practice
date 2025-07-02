@@ -12,10 +12,10 @@ export function TicketsMenuTabs() {
   const [activeTab, setActiveTab] = React.useState("buy");
 
   const tabsArray = [
-    { keyId: 1, text: "Купить", id: "buy" },
-    { keyId: 2, text: "Регистрация", id: "register" },
-    { keyId: 3, text: "Бронирования", id: "booking" },
-    { keyId: 4, text: "Статус", id: "status" },
+    { keyId: 1, text: "Bilet almaq", id: "buy" },
+    { keyId: 2, text: "Qeydiyyat", id: "register" },
+    { keyId: 3, text: "Bron", id: "booking" },
+    { keyId: 4, text: "Status", id: "status" },
     { keyId: 5, text: "Arrival", id: "arrival" },
     { keyId: 6, text: "Departure", id: "departure" },
   ];
@@ -25,7 +25,7 @@ export function TicketsMenuTabs() {
     <div className="">
       <div className="max-w-290 m-auto bg-blue-100 rounded-[15px] p-5 ">
         <div className="font-[Manrope-Bold] text-5xl text-center">
-          Самые выгодные цены на билеты
+          Ən münasib qiymətlərdə biletlər
         </div>
         <div className="flex  gap-5  p-10 m-auto">
           <div className="flex flex-col w-[250px] gap-1">

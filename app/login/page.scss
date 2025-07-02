@@ -2,7 +2,7 @@
   padding: 50px 0;
   height: 100vh;
 
-  .login-page-inner {
+  #login-page-inner {
     max-width: 1340px;
     margin: 0 auto;
     color: black;
@@ -11,6 +11,7 @@
     .login-page-title {
       font-size: 28px;
       margin-bottom: 10px;
+      font-family: "Manrope-Bold";
     }
 
     form {
@@ -20,6 +21,7 @@
           font-size: 18px;
           display: inline-block;
           margin-right: 10px;
+          font-family: "Manrope-Bold";
         }
         .login-input {
           font-size: 18px;
@@ -27,15 +29,18 @@
           margin-bottom: 20px;
           padding: 10px;
           border-radius: 10px;
-          border: none;
+          border: 1px solid;
+          background-color: white;
         }
       }
 
       .login-input-button {
         padding: 10px;
-        border: none;
+        border: 1px solid;
         border-radius: 10px;
         font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
     }
   }
