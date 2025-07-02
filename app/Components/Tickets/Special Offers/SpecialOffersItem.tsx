@@ -1,8 +1,14 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import MoscowImage from "../../../../public/Images/Moscow.webp";
 import TomskImage from "../../../../public/Images/Tomsk.webp";
+import { useRouter } from "next/navigation";
 export function SpecialOffersItem() {
+  const router = useRouter();
+
+  // const [fromState, setFromState] = useState("");
+  // const [toState, setToState] = useState("");
+
   const specialOffers = [
     {
       id: 1,
@@ -54,6 +60,11 @@ export function SpecialOffersItem() {
         <div
           key={offer.id}
           className="flex gap-4 w-[300px] rounded-[12px] cursor-pointer p-2 hover:bg-blue-100"
+          onClick={() => {
+            router.push(
+              `/buy?from=${offer.from}&to=${offer.to}&arrDate=""&depDate=""`
+            );
+          }}
         >
           <Image
             src={offer.img}

@@ -1,6 +1,12 @@
-import React from "react";
+import { useRouter } from "next/navigation";
+import React, { useState } from "react";
 
 export function HotelsMenuTab() {
+  const router = useRouter();
+
+  const [cityState, setCityState] = useState("");
+  const [countryState, setCountryState] = useState("");
+
   return (
     <div className="">
       <div className="max-w-290 m-auto bg-blue-100 rounded-[15px] p-5">
@@ -18,7 +24,7 @@ export function HotelsMenuTab() {
                     className="text-[16px] font-[Manrope-Regular] text-[#222a37] outline-none p-2  w-[180px]"
                   />
                 </div>
-                <div className="rounded-l-[8px] border-[1px] border-r-0 p-1 w-[180px] h-[75px]  py-[15px] bg-white">
+                {/* <div className="rounded-l-[8px] border-[1px] border-r-0 p-1 w-[180px] h-[75px]  py-[15px] bg-white">
                   <input
                     type="text"
                     placeholder="Giriş"
@@ -31,7 +37,7 @@ export function HotelsMenuTab() {
                     placeholder="Çıxış"
                     className="text-[16px] font-[Manrope-Regular] text-[#222a37] outline-none p-2 w-[180px]"
                   />
-                </div>
+                </div> */}
               </div>
               <div className="flex justify-between">
                 <div className="rounded-[8px] border-[1px]  p-1 w-[210px] h-[75px]  py-[15px] bg-white">

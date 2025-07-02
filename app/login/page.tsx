@@ -69,7 +69,11 @@ export default function LoginPage() {
               <p className="error-message">{errors.password.message}</p>
             )}
           </div>
-          <button type="submit" className="login-input-button">
+          <button
+            type="submit"
+            className="text-2xl border-1 border-black rounded-[15px] p-3 bg-[#97ba1e] text-white"
+            id="login-input-button"
+          >
             Daxil ol
           </button>
         </form>

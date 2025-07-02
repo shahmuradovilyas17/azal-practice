@@ -36,17 +36,17 @@ export default function StatusPage() {
             <div key={flight.id}>
               <div className="flex justify-between p-10  bg-blue-200 rounded-t-[15px]">
                 <h2 className="text-[18px] font-[Manrope-Regular]">
-                  {flight.flightNumber}
+                  Uçuş Nömrəsi: {flight.flightNumber}
                 </h2>
                 <p className="text-[18px] font-[Manrope-Regular]">
-                  {flight.time}
+                  Vaxt: {flight.time}
                 </p>
                 <p className="text-[18px] font-[Manrope-Regular]">
-                  {flight.remarks}
+                  Qeyd: {flight.remarks}
                 </p>
               </div>
               <div className="flex justify-between p-10 mb-5 bg-blue-100 rounded-b-[15px]">
-                Модель самолёта, Ворота
+                Giriş: {flight.gate}
               </div>
             </div>
           );

@@ -155,14 +155,55 @@ export function StateProvider({ children }: { children: ReactNode }) {
     },
     {
       id: 11,
-      date: "29.06.2025",
+      date: "05.07.2025",
       time: "23:50",
       from: "Moscow",
       to: "Baku",
+      flightNumber: "RU1221",
+      gate: "A33",
+      remarks: "planned",
+      type: "Arrival",
+    },
+    {
+      id: 12,
+      date: "29.06.2025",
+      time: "11:50",
+      from: "Baku",
+      to: "Moscow",
       flightNumber: "AA1722",
       gate: "101A",
-      remarks: "canceled",
-      type: "Arrival",
+      remarks: "planned",
+      type: "Departure",
+    },
+    {
+      id: 13,
+      date: "25.08.2025",
+      time: "11:50",
+      from: "Baku",
+      to: "Tomsk",
+      flightNumber: "AA1722",
+      gate: "101A",
+      remarks: "planned",
+      type: "Departure",
+    },
+  ];
+
+  const hotelsDB = [
+    {
+      id: 1,
+      name: "Marriott Hotel",
+      city: "Baku",
+      country: "Azerbaijan",
+      daily: "AZN 20",
+      month: "AZN 500",
+    },
+    {
+      id: 1,
+      name: "Hotel Cosmos",
+      city: "Moscow",
+      country: "Russia",
+      daily: "AZN 50",
+      month: "AZN 1000",
     },
   ];
   return (
